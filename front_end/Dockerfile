@@ -4,7 +4,7 @@ FROM node:10.9.0-alpine
 EXPOSE 3000
 
 # PROJECTHOME Variable
-ARG PROJECTHOME=/home/prodigious/form_ui
+ARG PROJECTHOME=/home/prodigious/front_end
 
 # Create project dir and update WORKDIR
 RUN mkdir -p $PROJECTHOME
