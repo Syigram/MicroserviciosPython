@@ -4,7 +4,7 @@ FROM python:3.7-slim-buster
 EXPOSE 5000
 
 # PROJECTHOME Variable
-ARG PROJECTHOME=/home/prodigious/form_app
+ARG PROJECTHOME=/home/prodigious/api
 
 # Create project dir and update WORKDIR
 RUN mkdir -p $PROJECTHOME
