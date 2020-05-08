@@ -17,7 +17,11 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the rest of the files
-COPY db_form.sqlite3 .
 COPY main.py .
+
+#Copy directories
+COPY app app
+COPY config config
+COPY models models
 
 CMD ["python", "main.py"]
